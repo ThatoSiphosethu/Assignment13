@@ -104,35 +104,35 @@ namespace Assignment13
                     {return;}
                    }
 
-                else if (option == 4)
-                   { Console.Clear();
-                    Console.WriteLine("\n1. Add Ratings\n2. View Ratings\n3. Upddate Rating\n4. Delete Rating");
-                    choice = Int32.Parse(Console.ReadLine()); 
-                    try
-                    {
-                        if (choice == 1)
-                            {
+                //else if (option == 4)
+                   //{ Console.Clear();
+                   // Console.WriteLine("\n1. Add Ratings\n2. View Ratings\n3. Upddate Rating\n4. Delete Rating");
+                   // choice = Int32.Parse(Console.ReadLine()); 
+                   // try
+                   // {
+                     //   if (choice == 1)
+                     //       {
 
-                                crud.AddRatings();
-                            }
-                        else if (choice == 2)
-                            {
-                                crud.SearchRating();
-                            }
-                        else if (choice == 3)
-                            {
-                                crud.UpdateRating();
-                            }
-                        else if (choice == 4)
-                            { 
-                                crud.DeleteRating();
-                            }
-                    }
-                    catch (System.Exception)
-                    {
-                         Console.WriteLine("Sorry option not yet available");
-                    }
-                   }
+                       //         crud.AddRatings();
+                      //      }
+                      //  else if (choice == 2)
+                      //      {
+                      //          crud.SearchRating();
+                      //      }
+                       // else if (choice == 3)
+                      //      {
+                       //         crud.UpdateRating();
+                       //     }
+                     //   else if (choice == 4)
+                       //     { 
+                        //        crud.DeleteRating();
+                        //    }
+                 //   }
+                   // catch (System.Exception)
+                  //  {
+                  //       Console.WriteLine("Sorry option not yet available");
+                  //  }
+                  // }
                     
                 else if (option == 5) {return;}
                
