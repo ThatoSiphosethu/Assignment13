@@ -51,13 +51,17 @@ namespace Assignment13
                     { 
                         crud.DeleteMovie();
                     }
+                    else if (choice == 5)
+                    {
+                        return;
+                    }
                     
                }
                else if (option == 2)
                
                {
                     Console.Clear();
-                    Console.WriteLine("\n1. Add User\n2. View Users\n3. Upddate User\n4. Delete User");
+                    Console.WriteLine("\n1. Add User\n2. View Users");
                     choice = Int32.Parse(Console.ReadLine()); 
                    if (choice == 1)
                     {
@@ -69,14 +73,15 @@ namespace Assignment13
                     }
                     else if (choice == 3)
                     {
-                       // crud.UpdateUser();
+                       return;
                     }
                     else if (choice == 4)
                     { 
                         //crud.DeleteUser();
                     }
-               }else if (option == 3)
-                    Console.Clear();
+               }
+               else if (option == 3)
+                   { Console.Clear();
                     Console.WriteLine("\n1. Add Occupation\n2. View Occupation\n3. Upddate Occupation\n4. Delete Occupation");
                     choice = Int32.Parse(Console.ReadLine()); 
                     if (choice == 1)
@@ -95,15 +100,19 @@ namespace Assignment13
                     { 
                         crud.DeleteOccupation();
                     }
+                    else if (choice == 5)
+                    {return;}
+                   }
 
                 else if (option == 4)
-                    Console.Clear();
+                   { Console.Clear();
                     Console.WriteLine("\n1. Add Ratings\n2. View Ratings\n3. Upddate Rating\n4. Delete Rating");
                     choice = Int32.Parse(Console.ReadLine()); 
                     try
                     {
                         if (choice == 1)
                             {
+
                                 crud.AddRatings();
                             }
                         else if (choice == 2)
@@ -123,11 +132,11 @@ namespace Assignment13
                     {
                          Console.WriteLine("Sorry option not yet available");
                     }
+                   }
                     
-                    
-                   // else {return;}
+                else if (option == 5) {return;}
                
-           } while (option > 5 || option < 1); 
+           } while (option > 6 || option < 1); 
 
         }
     }
