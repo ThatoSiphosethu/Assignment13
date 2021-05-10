@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Owner\\Desktop\\2021 Assignment\\Assignment13\\Assignment13.csproj": {}
+    "C:\\Users\\Owner\\Desktop\\2021 Assignment\\Assignment13\\Assignment13.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Owner\\Desktop\\2021 Assignment\\Assignment13\\Assignment13.csproj": {
+    "C:\\Users\\Owner\\Desktop\\2021 Assignment\\Assignment13\\Assignment13.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Owner\\Desktop\\2021 Assignment\\Assignment13\\Assignment13.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Desktop\\2021 Assignment\\Assignment13\\Assignment13.csproj",
         "projectName": "Assignment13",
-        "projectPath": "c:\\Users\\Owner\\Desktop\\2021 Assignment\\Assignment13\\Assignment13.csproj",
+        "projectPath": "C:\\Users\\Owner\\Desktop\\2021 Assignment\\Assignment13\\Assignment13.csproj",
         "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Owner\\Desktop\\2021 Assignment\\Assignment13\\obj\\",
+        "outputPath": "C:\\Users\\Owner\\Desktop\\2021 Assignment\\Assignment13\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config"

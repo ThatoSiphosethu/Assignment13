@@ -133,21 +133,15 @@ namespace Assignment13
 
         public void SearchUser()
         {
-          using (var db = new MovieContext()) 
-            {
-               var selectedUser = db.Users.Where(x=> x.Id == 1);
-                var users = selectedUser.Include(x=>x.UserMovies).ThenInclude(x=>x.Movie).ToList();
-
-                foreach (var user in users)
-                {
-                    System.Console.WriteLine($"Added user: ({user.Id}) {user.Gender} {user.Occupation.Name}");
-
-                    foreach (var movie in user.UserMovies.OrderBy(x=>x.Rating)) 
-                    {
-                        System.Console.WriteLine($"\t\t\t{movie.Rating} {movie.Movie.Title}");
-                    }
-                }  
-            }
+            Console.WriteLine("Displaying users list");
+            
+            using (var db = new MovieContext()) {
+                var users = db.Users.Include(x=>x.Occupation)
+                                 .Take(10).ToList();
+                 foreach (var user in users) {
+                     System.Console.WriteLine($"({user.Id}) {user.Gender} {user.Occupation.Name}");
+                 }
+             }
         }
 
         public void AddOccupation()

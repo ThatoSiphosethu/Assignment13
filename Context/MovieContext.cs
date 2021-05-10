@@ -15,7 +15,7 @@ namespace Assignment13.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
                 // optionsBuilder.UseLazyLoadingProxies().UseSqlServer(@"Server=bitsql.wctc.edu;Database=mmcarthey_22097_Movie;User ID=mmcarthey;Password=000075813;");
-               // optionsBuilder.UseSqlServer(@"Server=bitsql.wctc.edu;Database=tramalepa_22097_MovieA13;User ID=tramalepa;Password=000558972;");
+                optionsBuilder.UseSqlServer(@"Server=bitsql.wctc.edu;Database=tramalepa_22097_MovieA13;User ID=tramalepa;Password=000558972;");
         }
     }
 }
